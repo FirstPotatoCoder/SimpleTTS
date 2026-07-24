@@ -1,6 +1,7 @@
 # SimpleTTS
 
 Decoder-only transformer TTS, using [WavTokenizer](https://github.com/jishengpeng/WavTokenizer) as the audio codec.
+
 Weights and samples on the [Hugging Face model page](https://huggingface.co/AnotherPotatoCoder/English-TTS).
 
 ## Setup
