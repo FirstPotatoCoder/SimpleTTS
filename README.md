@@ -1,7 +1,7 @@
 # SimpleTTS
 
-Decoder-only transformer TTS, using [WavTokenizer](https://github.com/jishengpeng/WavTokenizer)
-as the audio codec.
+Decoder-only transformer TTS, using [WavTokenizer](https://github.com/jishengpeng/WavTokenizer) as the audio codec.
+Weights and samples on the [Hugging Face model page](https://huggingface.co/AnotherPotatoCoder/English-TTS).
 
 ## Setup
 
@@ -24,9 +24,9 @@ Or from Python:
 from tts.inference import TTSPipeline
 
 pipe = TTSPipeline(
-tts_weights="weights/tts.pt",
-wavtokenizer_weights="weights/wavtokenizer.ckpt",
-wavtokenizer_config="configs/wavtokenizer_config.yaml",
+    tts_weights="weights/tts.pt",
+    wavtokenizer_weights="weights/wavtokenizer.ckpt",
+    wavtokenizer_config="configs/wavtokenizer_config.yaml"
 )
 pipe.generate("Some text to speak.", out_path="out.wav")
 ```
